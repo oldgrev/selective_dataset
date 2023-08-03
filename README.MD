@@ -1,4 +1,4 @@
-For working with datasets and picking out favourable training data.
+For working with datasets and picking out favourable training data. Specifically language models.
 
 In the current iteration, this example uses 1M-GPT4-Augmented.parquet from Open-Orca/OpenOrca
 
@@ -10,3 +10,4 @@ Ultimately it goes from ~1 million rows to ~85,000 rows where:
 
 The output is a json file for training in alpaca format. The system prompt is ignored. The goal is longer, more coherent responses, with assumption that "Less Is More for Alignment" holds true.
 
+An outcome may be favourable responses.
