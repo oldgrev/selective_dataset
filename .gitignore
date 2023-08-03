@@ -1,1 +1,3 @@
 *.parquet
+*.tsv
+*dataset.json

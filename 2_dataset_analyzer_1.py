@@ -1,6 +1,6 @@
 # This script prunes the dataset on some arbitrary crud I made up.
 # It also analyzes the dataset with a classifier.
-# I don't touch the question column, because that can be as bad as we like.
+# I don't touch the question column, because that can be as badly formatted as we like, just like us.
 
 analysis_out_file = "analysis_1.tsv"
 analysis_model_file = "salesken/query_wellformedness_score"
@@ -30,7 +30,7 @@ if not os.path.isfile(analysis_out_file):
 if drop_responses_less_than_10:
     df = df[df['response'].str.len() > 10]
 
-if drop_responses_shorter_than_question:
+if drop_responses_shorter_than_question:  # redundant, but a quick pruning pass
     df = df[df['response'].str.len() > df['question'].str.len()]
 
 if drop_responses_less_than_4x_question:
@@ -81,4 +81,5 @@ for index, row in df.iterrows():
         except Exception as e:
             print(f"{id}Error: {e}")
             continue       
-                   
+
+# there is now an analysis_out_file in the current folder that contains the id and score of each response
