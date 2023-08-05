@@ -2,7 +2,7 @@ For working with datasets and picking out favourable training data. Specifically
 
 In the current iteration, this example uses 1M-GPT4-Augmented.parquet from Open-Orca/OpenOrca
 
-Ultimately it goes from ~1 million rows to ~85,000 rows where:
+Ultimately it goes from ~1 million rows to ~44,000 rows where:
 - the response is always at least four times as long as the prompt
 - the response is at least 10 characters long
 - an analysis of the response is in the top 25% of the range of scores of the dataset. 
