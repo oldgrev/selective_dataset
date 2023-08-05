@@ -34,10 +34,10 @@ df_full = df_full[df_full['score'] > 0.62]
 print("Results scored above 62%: " + str(len(df_full.index)))
 df_full = df_full[df_full['score'] > 0.64]
 print("Results scored above 64%: " + str(len(df_full.index)))
-# df_full = df_full[df_full['score'] > 0.66]
-# print("Results scored above 66%: " + str(len(df_full.index)))
-# df_full = df_full[df_full['score'] > 0.68]
-# print("Results scored above 68%: " + str(len(df_full.index)))
+df_full = df_full[df_full['score'] > 0.66]
+print("Results scored above 66%: " + str(len(df_full.index)))
+df_full = df_full[df_full['score'] > 0.68]
+print("Results scored above 68%: " + str(len(df_full.index)))
 # df_full = df_full[df_full['score'] > 0.70]
 # print("Results scored above 70%: " + str(len(df_full.index)))
 
@@ -56,15 +56,14 @@ with open("pruned_dataset.json", "w") as f:
 
 # Reference output:
 # Dataset starting row count: 994896
-# Dataset scored row count: 214493
-# Results scored above 50%: 214493
-# Results scored above 52%: 213880
-# Results scored above 54%: 205838
-# Results scored above 56%: 190254
-# Results scored above 58%: 163752
-# Results scored above 60%: 130617
-# Results scored above 62%: 101565
-# Results scored above 64%: 81203
-# Results scored above 66%: 62556
-# Results scored above 68%: 42911
-# Results scored above 70%: 23226
+# Dataset scored row count: 395082
+# Results scored above 50%: 394929
+# Results scored above 52%: 394316
+# Results scored above 54%: 385936
+# Results scored above 56%: 364734
+# Results scored above 58%: 320181
+# Results scored above 60%: 229484
+# Results scored above 62%: 138725
+# Results scored above 64%: 95633
+# Results scored above 66%: 66552
+# Results scored above 68%: 43893
